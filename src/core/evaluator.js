@@ -1738,7 +1738,7 @@ class PartialEvaluator {
                 )
                 .then(function (loadedName) {
                   operatorList.addDependency(loadedName);
-                  operatorList.addOp(OPS.setFont, [loadedName, fontSize]);
+                    operatorList.addOp(OPS.setFont, [loadedName, fontSize, stateManager.state]);
                 })
             );
             return;
